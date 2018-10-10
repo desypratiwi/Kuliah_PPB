@@ -13,18 +13,35 @@
         android:text="Ini Menu1"
         android:textColor="#fff"
         android:background="@color/colorPrimaryDark"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        />
     <Button
         android:id="@+id/btn_menu2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ini Menu2"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/btn_menu1"
+        android:textColor="#fff"
+        android:layout_marginBottom="10dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_alert_dialog"
+        android:layout_below="@id/btn_menu2"
+        android:text="Menu Alert Dialog"
         android:background="@color/colorPrimary"
         android:textColor="#fff"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="166dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:layout_marginBottom="10dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notifactionMenu"
+        android:layout_below="@id/btn_alert_dialog"
+        android:text="Menu Notification"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        />
 </RelativeLayout>

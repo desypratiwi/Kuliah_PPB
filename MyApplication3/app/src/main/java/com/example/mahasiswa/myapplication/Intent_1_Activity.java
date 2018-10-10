@@ -14,6 +14,7 @@ public class Intent_1_Activity extends AppCompatActivity {
         setContentView(R.layout.intent_1);
         mMenu1 =(Button)findViewById(R.id.bt_register);
         mBack =(Button)findViewById(R.id.bt_back);
+
         mMenu1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -28,6 +29,7 @@ public class Intent_1_Activity extends AppCompatActivity {
                 finish();
             }
         });
+
     }
 }
 

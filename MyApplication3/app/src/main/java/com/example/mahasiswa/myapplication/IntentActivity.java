@@ -28,5 +28,23 @@ public class IntentActivity extends AppCompatActivity {
                 startActivity(iMenu2);
             }
         });
+        Button dialog = findViewById(R.id.btn_alert_dialog);
+        dialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mDialog= new Intent(getApplicationContext(), AlertDialogActivity.class);
+                startActivity(mDialog);
+                finish();
+            }
+        });
+        Button notif = findViewById(R.id.notifactionMenu);
+        notif.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mNotif= new Intent(getApplicationContext(), NotificationActivity.class);
+                startActivity(mNotif);
+                finish();
+            }
+        });
     }
 }

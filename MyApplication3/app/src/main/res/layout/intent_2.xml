@@ -1,17 +1,28 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:orientation="vertical">
-    <ScrollView
-        android:id="@+id/login_form"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    >
+
+
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher_background"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imgKu"
+            android:src="@drawable/ic_logo"
             />
-    </ScrollView>
-</LinearLayout>
+        <Button
+            android:layout_below="@+id/imgKu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBack"
+            android:layout_centerInParent="true"
+            android:text="Back"/>
+        </RelativeLayout>
+
+</RelativeLayout>
